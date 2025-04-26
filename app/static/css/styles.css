@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+    background-color: #DDDDDD;
+}
+
+a:hover {
+    background-color: #FF0055;
+    color: white;
+}
+
+ul ul {
+    margin-left: 30px;
+}

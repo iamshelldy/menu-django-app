@@ -1,5 +1,16 @@
+{% load static %}
 {% load menu_tags %}
 
-<div>
-    {% draw_menu 'main_menu' %}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Page</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="menu-container">
+        {% draw_menu 'main_menu' %}
+    </div>
+</body>
+</html>
