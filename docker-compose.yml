@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    container_name: my_app
+    command: python /app/manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./app:/app
+    environment:
+      - DJANGO_SETTINGS_MODULE=app.settings
+    ports:
+      - "8000:8000"
+    restart: on-failure
